@@ -9,11 +9,11 @@ interface Props {
   onOpenRequest: () => void;
 }
 const links = [
-  { href: "#catalog", label: "Продукция" },
-  { href: "#calculator", label: "Калькулятор" },
-  { href: "#production", label: "Производство" },
-  { href: "#certificates", label: "Сертификаты" },
-  { href: "#contacts", label: "Контакты" },
+  { href: "./#catalog", label: "Продукция" },
+  { href: "./#calculator", label: "Калькулятор" },
+  { href: "./#production", label: "Производство" },
+  { href: "./#certificates", label: "Сертификаты" },
+  { href: "./#contacts", label: "Контакты" },
   { href: "./purchase.html", label: "Поставщикам" },
 ];
 export function Header({ count, onOpenRequest }: Props) {
