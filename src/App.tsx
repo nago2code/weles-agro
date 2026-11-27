@@ -55,7 +55,7 @@ export default function App() {
   const [requestOpen, setRequestOpen] = useState(false);
   const [announcement, setAnnouncement] = useState("");
   const [storageWarning, setStorageWarning] = useState(false);
-  const isPurchase = window.location.pathname === "/purchase.html" || window.location.pathname === "/purchase";
+  const isPurchase = /\/purchase(?:\.html)?$/.test(window.location.pathname);
   useEffect(() => { document.title = isPurchase ? "Поставщикам — Велес Агро" : "Велес Агро — продукция для вашего бизнеса"; }, [isPurchase]);
   const count = Object.keys(selection).length;
   useEffect(() => {
@@ -139,7 +139,7 @@ export default function App() {
           <br />
           <span>Мясо птицы, полуфабрикаты и деликатесы.</span>
         </p>
-        <a href="/purchase.html">Поставщикам</a>
+        <a href="./purchase.html">Поставщикам</a>
         <button className="motion-toggle" aria-pressed={!motionPreference.reduced} onClick={motionPreference.toggle}>
           {motionPreference.reduced ? "Включить анимации" : "Сократить анимации"}
         </button>

@@ -14,7 +14,7 @@ export function Purchase() {
   const body = `Здравствуйте!\n\nПредлагаем поставку${direction ? ` по направлению «${direction}»` : ""}.\n\nКомпания:\nПродукция и характеристики:\nЦена и условия оплаты:\nОбъём и сроки поставки:\nКонтактное лицо и телефон:\n\nКоммерческое предложение приложено к письму.`;
   return <>
     <section className="purchase-hero section-wrap" aria-labelledby="purchase-title">
-      <a href="/" className="text-link">Главная / Поставщикам</a>
+      <a href="./" className="text-link">Главная / Поставщикам</a>
       <div className="purchase-intro">
         <h1 id="purchase-title">Ваше сырьё.<br/><span>Наше производство.</span></h1>
         <div><p>Приглашаем поставщиков товаров и материалов для производства Велес Агро.</p><a href="#purchase-directions" className="button button-dark">Посмотреть направления <ArrowUpRight size={18}/></a></div>

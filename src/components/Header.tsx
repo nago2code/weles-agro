@@ -14,7 +14,7 @@ const links = [
   { href: "#production", label: "Производство" },
   { href: "#certificates", label: "Сертификаты" },
   { href: "#contacts", label: "Контакты" },
-  { href: "/purchase.html", label: "Поставщикам" },
+  { href: "./purchase.html", label: "Поставщикам" },
 ];
 export function Header({ count, onOpenRequest }: Props) {
   const scrollToSection = useMenuScroll();
